@@ -1,0 +1,109 @@
+/* exo-regular - latin */
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/exo-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/exo-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* exo-700 - latin */
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/exo-v20-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/exo-v20-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* exo-900 - latin */
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/exo-v20-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/exo-v20-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Exo';
+}
+
+.main-header,
+.main-footer {
+    text-align: center;
+    background-color: lightgrey;
+    padding-block: 1rem;
+}
+
+.container {
+    width: 30rem;
+    margin: auto;
+}
+
+#colors {
+    display: flex;
+    justify-content: space-around;
+    margin-block-end: 3rem;
+}
+
+#colors fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    border: 0;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    padding-block: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 6rem;
+}
+
+.winner {
+    color: green;
+}
+
+.draw {
+    color: grey;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
+}
+
+.restart {
+    display: flex;
+    justify-content: center;
+}
+
+#restart {
+    padding: 1rem 3rem;
+}

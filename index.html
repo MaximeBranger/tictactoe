@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/helper.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>TicTacToe</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <form id="colors">
+                    <fieldset>
+                        <label for="teamA">First Player Color</label>
+                        <input type="color" name="teamA" id="teamA">
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="teamB">Second Player Color</label>
+                        <input type="color" name="teamB" id="teamB">
+                    </fieldset>
+            </form>
+
+            <section class="game">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+                <div class="card" id="card4"></div>
+                <div class="card" id="card5"></div>
+                <div class="card" id="card6"></div>
+                <div class="card" id="card7"></div>
+                <div class="card" id="card8"></div>
+                <div class="card" id="card9"></div>
+            </section>
+
+            <div class="result"></div>
+            
+            <div class="restart">
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            2023 &copy; MaximeBranger
+        </div>
+    </footer>
+
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

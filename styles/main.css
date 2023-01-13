@@ -107,3 +107,18 @@ body {
 #restart {
     padding: 1rem 3rem;
 }
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 50rem;
+    }
+
+    .card {
+        max-width: 12rem;
+        height: 12rem;
+    }
+
+    #colors fieldset {
+        font-size: 1.5rem;
+    }
+}

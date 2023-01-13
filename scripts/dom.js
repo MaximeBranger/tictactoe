@@ -84,6 +84,10 @@ function checkWinner(team) {
 }
 
 function hoverCard(ev) {
+    if (!isPlaying) {
+        return;
+    }
+
     if (ev.target.dataset.status !== "checked") {
         ev.target.style.backgroundColor = color;
     }
